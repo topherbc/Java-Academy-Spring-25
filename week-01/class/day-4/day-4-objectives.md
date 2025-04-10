@@ -105,3 +105,44 @@ Today's Agenda
 11. Conditionals
 12. Recap and Q&A
 
+What did you learn today?
+
+1. shortcuts
+   1. sout - System.out.println();
+   2. main - main method
+   3. souf - System.out.printf();
+2. Math Operations
+   1. Math.max()
+   2. Math.min()
+   3. Math.PI
+   4. Math.sqrt()
+   5. Math.pow()
+   6. Math.random() - random between 0 and 1
+3. Scanner class
+   1. Allows input
+   2. import java.util.Scanner;
+   3. Scanner varName = new Scanner(System.in);
+   4. .nextLine()
+   5. .nextInt()
+   6. .next()
+   7. .nextFloat()
+   8. .nextDouble()
+   9. .nextByte()
+4. System.out.printf()
+   1. Preformat strings
+   2. Insert Java Format Specifiers
+      1. %s - strings
+      2. %.2f - for .2 decimal floating point numbers
+      3. %x - hexadecimal
+      4. %c - character
+      5. %d - decimal
+5. {} curly brackets
+6. ; semicolon - ends expression
+7. \n - new line character
+8. CRLF - Carriage Return Line Feed
+9. if statements
+10. else if
+11. else
+12. type casting
+    1.  converting a variable with a type to another
+13. Don't memorize when you can look it up
