@@ -57,3 +57,40 @@ Agenda Today
 13. Break
 14. Printing to the screen and taking in user input
 15. Review and Q&A
+
+
+What did you learn today?
+
+1. IntelliJ - IDE - Integrated Development Environment
+2. Java is platform agnostic
+3. Object Oriented Language
+4. Java != JavaScript
+5. JDK or Java Development Kit is a set of tools
+6. JRE or Java Runtime Environment - has JVM
+7. JVM or Java Virtual Machine
+8. Compile = putting the code together
+9. Create Packages
+10. Create Classes
+11. Pushing to github
+   1. git push origin main
+12. Static Variables
+13. Java Data Types
+   1. float - smaller, values with decimals
+   2. double - larger, values with decimals
+   3. int - number
+   4. long - number, larger
+   5. short - number, smaller
+   6. String
+      1. ""
+   7. boolean 
+   8. byte
+   9. char
+       1.  ''
+14. comments
+   1. // single line comment
+   2. /* multi line comment */
+15. {} - curly brackets/braces
+16. [] - square brackets
+17. block of code
+    1.  contents of a section of code
+    2.  section of code is determined by open { and close }
