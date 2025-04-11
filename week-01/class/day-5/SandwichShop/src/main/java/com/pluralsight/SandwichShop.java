@@ -11,8 +11,18 @@ public class SandwichShop {
         System.out.println("Welcome Big T's Sandwich Shoppe");
 
         System.out.print("Please choose a sandwich size (Enter 1 for Regular, 2 for Large): ");
-
         int option = waiter.nextInt();
+
+        waiter.nextLine(); //consume the CRLF
+
+        System.out.print("Hey, please choose something with words (yes/no): ");
+        String loaded = waiter.nextLine();
+
+        if (loaded.equals("yes")) {
+            System.out.println("Hey, you chose yes!");
+        } else {
+            System.out.println("nope you chose no");
+        }
 
         System.out.print("Please enter your age for a discount: ");
 
