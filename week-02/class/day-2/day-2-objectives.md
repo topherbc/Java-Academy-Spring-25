@@ -35,3 +35,27 @@ Agenda Today
 8. Break
 9. Other stuff
 10. Recap and Q&A
+
+
+
+What did you learn today?
+
+1. StringBuilder 
+2. to append - add to the end/bottom
+3. /n
+4. String Methods
+   1. "example".startsWith("ex") - boolean response
+   2. .endsWith() - boolean response
+   3. .split() - return String[]
+      1. .split("\\|")
+      2. .split(Pattern.quote("|"))
+5. parse - extracting data type from another
+   1. Integer.parseInt("100") - extracts int type from string
+   2. Double.parseDouble() - extracts double
+   3. Float.parseFloat()
+   4. Boolean.parseBoolean()
+6. How to use AI effectively
+7. import java tools
+   1. Date stuff
+   2. Pattern
+      1. Pattern.quote("|")
