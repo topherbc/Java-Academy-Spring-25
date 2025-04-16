@@ -16,7 +16,7 @@ public class App {
         House ourNotSoGreatHouse = new House("0", 1, 0, 0, 0, false, "outhouse kitchen", 1, 1610);
 
 
-        
+
 
 
         Scanner keyboard = new Scanner(System.in);

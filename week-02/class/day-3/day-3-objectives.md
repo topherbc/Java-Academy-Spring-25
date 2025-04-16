@@ -69,13 +69,24 @@ Agenda Today
 11. Recap and Q&A
 
 
-Object
+What did you learn today?
 
-private data - 
-
-public data
-
-
+1. function
+2. Converting char to String
+   1. String.valueOf()
+3. Classes - A blueprint to create Objects
+   1. new - creates an object
+   2. getter methods gets value from object
+   3. setter methods sets value on object
+   4. access modifiers
+      1. private
+      2. public
+   5. constructor function - build the objects values
+      1. Has same name as class
+   6. Classses are capitalized
+4. variables are lowercased
+5. methods are lowercased
+6. encapsulation - hiding or containing information
 
 
 
