@@ -69,5 +69,13 @@ Agenda Today
 11. Recap and Q&A
 
 
+Object
+
+private data - 
+
+public data
+
+
+
 
 
