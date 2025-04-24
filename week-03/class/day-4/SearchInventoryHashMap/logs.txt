@@ -1,0 +1,6 @@
+2025-04-24 15:20:43 - program launch
+2025-04-24 15:20:49 - user selection : 1
+2025-04-24 15:20:49 - view all inventory : invoked
+2025-04-24 15:20:49 - view all inventory : complete
+2025-04-24 15:20:58 - user selection : 5
+2025-04-24 15:20:58 - program exit

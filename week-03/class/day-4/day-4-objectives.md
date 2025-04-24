@@ -36,3 +36,10 @@ Agenda Today
 7. Break
 8. Collections
 9. Recap and Q&A
+
+
+
+HashMap - List of keys and values
+
+ArrayList - List of values with indexes
+  add as many as you want

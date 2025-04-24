@@ -4,13 +4,15 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
 public class App {
     public static void main(String[] args) {
+//        runMaps();
         Logger.log("program launch");
-        ArrayList<Product> inventory = getInventory();
+        HashMap<Integer, Product> inventory = getInventory();
 
         Scanner keyboard = new Scanner(System.in);
         System.out.println("---Welcome to the Inventory Management System---\n");
@@ -45,10 +47,10 @@ public class App {
         }
     }
 
-    public static ArrayList<Product> getInventory() {
+    public static HashMap<Integer, Product> getInventory() {
         Logger.log("get inventory : invoked");
-        ArrayList<Product> inventory = new ArrayList<Product>();
 
+        HashMap<Integer, Product> inventory = new HashMap<Integer, Product>();
 
         try {
             BufferedReader br = new BufferedReader(new FileReader("src/main/resources/inventory.csv"));
@@ -58,7 +60,9 @@ public class App {
                 //line == 4567|10' 2x4  (grade B)|9.99 first time
                 String[] splitItems = line.split(Pattern.quote("|"));
 
-                inventory.add(new Product(Integer.parseInt(splitItems[0]), splitItems[1], Double.parseDouble(splitItems[2])));
+                int id = Integer.parseInt(splitItems[0]);
+
+                inventory.put(id, new Product(id, splitItems[1], Double.parseDouble(splitItems[2])));
             }
 
         } catch(IOException e) {
@@ -71,11 +75,46 @@ public class App {
 
     }
 
-    public static void viewAllInventory(ArrayList<Product> inventory) {
+    public static void viewAllInventory(HashMap<Integer, Product> inventory) {
         Logger.log("view all inventory : invoked");
-        for(Product product : inventory) {
+        for(Product product : inventory.values()) {
             System.out.printf("Name: %s, Price: $%.2f\n", product.getName(), product.getPrice());
         }
         Logger.log("view all inventory : complete");
     }
+
+
+    public static void runMaps() {
+        HashMap<String, String> statesAndCapitals = new HashMap<String, String>();
+        //0       1        2 -- index
+//        {"one", "blue", "aligator"}
+
+        statesAndCapitals.put("PA", "Harrisburg");
+        statesAndCapitals.put("SC", "Columbia");
+        statesAndCapitals.put("TR", "Ankara");
+        statesAndCapitals.put("GA", "Georgia");
+        statesAndCapitals.put("AZE", "Baku");
+        statesAndCapitals.put("cactus", "monkeytail");
+
+
+//        System.out.println(statesAndCapitals.get("PA"));
+
+        for(String capital : statesAndCapitals.values()) {
+            if (capital.contains("g")) {
+                System.out.println(capital);
+            }
+        }
+
+        for(String state : statesAndCapitals.keySet()) {
+            if (state.startsWith("A")) {
+                System.out.println(state);
+            }
+        }
+
+
+    }
+
+
+
+
 }
