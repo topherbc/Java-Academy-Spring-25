@@ -40,7 +40,9 @@ public class App {
 
         System.out.println(sesameStreetCharacters);
 
+        int x = 6;
 
+        System.out.println(10 + x);
 
     }
 }
