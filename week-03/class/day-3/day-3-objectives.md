@@ -50,3 +50,19 @@ Agenda Today
 8. Break
 9. Logger Exercise
 10. Recap and Q&A
+
+
+What did you learn today?
+
+1. DateTimeFormatter
+2. LocalDateTime.now() - gets now
+3. ZoneId
+4. BufferedWriter
+5. System.exit(0) - closes program
+6. Fixing syntax errors
+7. Block comments informing us of method definitions
+8. FileReader
+9. BufferedReader
+10. FileWriter
+11. Naming methods is incredibly important
+12. Java reads down, left to right
