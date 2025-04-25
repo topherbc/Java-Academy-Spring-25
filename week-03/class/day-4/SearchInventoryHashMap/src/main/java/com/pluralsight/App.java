@@ -28,8 +28,21 @@ public class App {
                     "\t5- Quit the application\n");
             System.out.print("Enter Selection: ");
             int selection = keyboard.nextInt();
-            keyboard.nextLine();
+            keyboard.nextLine(); //consume CRLF
             Logger.log("user selection : " + selection);
+
+            // If statement comparing to switch below
+//            if (selection == 1) {
+//                viewAllInventory(inventory);
+//                System.out.print("Continue to menu (Hit Enter): ");
+//                keyboard.nextLine();
+//            } else if (selection == 5) {
+//                Logger.log("program exit");
+//                System.exit(0);
+//            } else {
+//                Logger.error("invalid selection made : " + selection);
+//                System.out.println("Invalid option selected, please try again\n");
+//            }
 
             switch (selection) {
                 case 1:
@@ -72,14 +85,15 @@ public class App {
 
         Logger.log("get inventory : complete");
         return inventory;
-
     }
 
     public static void viewAllInventory(HashMap<Integer, Product> inventory) {
         Logger.log("view all inventory : invoked");
+
         for(Product product : inventory.values()) {
             System.out.printf("Name: %s, Price: $%.2f\n", product.getName(), product.getPrice());
         }
+
         Logger.log("view all inventory : complete");
     }
 

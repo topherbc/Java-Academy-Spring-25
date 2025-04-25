@@ -20,7 +20,7 @@ public class Logger {
             logger.write(formatted + " - " + action);
             logger.newLine();
 
-            logger.close();
+            logger.close(); //saves file
         } catch(IOException e) {
             e.printStackTrace();
         }

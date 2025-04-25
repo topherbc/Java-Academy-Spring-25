@@ -4,3 +4,11 @@
 2025-04-24 15:20:49 - view all inventory : complete
 2025-04-24 15:20:58 - user selection : 5
 2025-04-24 15:20:58 - program exit
+2025-04-25 09:12:14 - program launch
+2025-04-25 09:12:14 - get inventory : invoked
+2025-04-25 09:12:14 - get inventory : complete
+2025-04-25 09:12:19 - user selection : 1
+2025-04-25 09:12:19 - view all inventory : invoked
+2025-04-25 09:12:19 - view all inventory : complete
+2025-04-25 09:12:59 - user selection : 5
+2025-04-25 09:12:59 - program exit
