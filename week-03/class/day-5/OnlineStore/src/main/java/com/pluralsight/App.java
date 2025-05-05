@@ -23,8 +23,8 @@ public class App {
         System.out.println("");
 
 
-        while(true) {
-            System.out.println("What do you want to do?");
+        while(true) { //while loop to do this
+            System.out.println("What do you want to do? (select an option)");
             System.out.println("\t1- Product Menu\n" +
                     "\t2- Cart Menu\n" +
                     "\t3- Exit\n");
@@ -161,7 +161,7 @@ public class App {
             if (searchSKU.trim().equalsIgnoreCase(sku)){
                 product = products.get(sku);
             }
-        }
+        } //This is a for-each loop that iterates through all the keys in the products HashMap. Each key is a String representing a SKU
         return product;
     }
 }
