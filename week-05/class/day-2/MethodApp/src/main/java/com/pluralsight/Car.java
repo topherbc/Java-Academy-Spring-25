@@ -14,6 +14,20 @@ public class Car {
         this.speed = 0;
     }
 
+    //Overloaded constructor
+    public Car(String make) {
+        this.make = make;
+        this.model = "";
+        this.speed = 0;
+    }
+
+    //Overloaded parameterless constructor
+    public Car() {
+        this.make = "";
+        this.model = "";
+        this.speed = 0;
+    }
+
     // getters and setters
     public String getMake() {
         return this.make;
