@@ -59,3 +59,12 @@ Agenda Today
 10. Exercise
 11. Recap and Q&A
 
+What did you learn today?
+
+1. Causing code to wait, Thread.sleep()
+2. Overloading Methods
+   1. Same named methods, different input types and output types
+3. Overloading constructor method
+4. final - makes data immutable/unchangeable/unmodifiable/constant
+5. dot notation
+   1. We use dot notation to access properties and methods
