@@ -1,0 +1,32 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="1000" fill="white" />
+  
+  <!-- Grid Lines -->
+  <g stroke="black" stroke-width="1">
+    <!-- Vertical lines -->
+    <line x1="0" y1="0" x2="0" y2="1000" />
+    <line x1="200" y1="0" x2="200" y2="1000" />
+    <line x1="400" y1="0" x2="400" y2="1000" />
+    <line x1="600" y1="0" x2="600" y2="1000" />
+    <line x1="800" y1="0" x2="800" y2="1000" />
+    
+    <!-- Horizontal lines -->
+    <line x1="0" y1="0" x2="800" y2="0" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="0" y1="600" x2="800" y2="600" />
+    <line x1="0" y1="800" x2="800" y2="800" />
+    <line x1="0" y1="1000" x2="800" y2="1000" />
+  </g>
+  
+  <!-- End Position (Side 2) -->
+  <g transform="translate(750, 950)">
+    <circle cx="-50" cy="-50" r="50" fill="red" />
+    <text x="-50" y="-50" font-size="24" text-anchor="middle" dominant-baseline="middle" fill="white">END</text>
+  </g>
+  
+  
+  <!-- Note to flip page -->
+  <text x="400" y="980" font-size="16" text-anchor="middle" dominant-baseline="middle">Flip page for Side 1</text>
+</svg>

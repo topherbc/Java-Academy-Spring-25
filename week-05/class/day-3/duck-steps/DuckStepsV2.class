@@ -1,0 +1,32 @@
+package duck.quack;
+
+import geese.*;
+
+public class DuckStepsV2 {
+    /**
+     * Verifies if the command at the given step is correct for the duck maze
+     * The duck starting position is at the green START (0,0)
+     * The duck starts facing to the RIGHT of the duck driving student
+     *
+     * @param step Step number (1-9)
+     * @param command Command string to verify
+     * @return true if the command is valid for this step, false otherwise
+     */
+    public static boolean verifyStep(int step, String command) {
+        // Normalize the command by trimming and converting to lowercase
+        String normalizedCommand = command.trim().toLowerCase();
+
+        switch (step) {
+            case 1: return normalizedCommand.equals("move forward 2");
+            case 2: return normalizedCommand.equals("turn right"); // Now facing down (South)
+            case 3: return normalizedCommand.equals("forward 1");
+            case 4: return normalizedCommand.equals("turn right"); // Now facing left (West)
+            case 5: return normalizedCommand.equals("forward 2");
+            case 6: return normalizedCommand.equals("turn left");  // Now facing down (South)
+            case 7: return normalizedCommand.equals("forward 3");
+            case 8: return normalizedCommand.equals("turn left");  // Now facing right (East)
+            case 9: return normalizedCommand.equals("forward 3");  // Reached goal (4,3)
+            default: return false;
+        }
+    }
+}
