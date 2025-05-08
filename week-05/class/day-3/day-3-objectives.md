@@ -47,3 +47,21 @@ Agenda Today
 5. Lunch
 6. Unit Testing
 7. Recap and Q&A
+
+
+What you did learn today?
+
+1. Testing - confirming validity
+2. E2E
+3. Integration
+4. Unit Testing - Test block of code, to ensure expectations are met
+   1. Arrange
+   2. Act
+   3. Assert
+5. Math.min() - returns minimum of 2 numbers
+6. Math.max() - returns maximum of 2 numbers
+   1. JUST IF STATEMENTS
+7. snake_case naming convention for test methods
+8. //@Todo highlights things to do in comments
+9. SELECT ALL AND hit cmd + ?, ctrl + ? to auttocomment
+10. Constructor methods can accept different amounts of parameters

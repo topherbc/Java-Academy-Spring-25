@@ -1,5 +1,6 @@
 package com.pluralsight;
 
+
 public class Hotel {
     private int numberOfSuites, numberOfRooms, bookedSuites, bookedBasicRooms;
     private String name;

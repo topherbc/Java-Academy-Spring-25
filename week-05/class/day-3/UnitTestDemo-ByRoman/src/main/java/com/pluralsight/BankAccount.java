@@ -8,7 +8,7 @@ public class BankAccount {
     }
 
     public double getBalance(){
-        return balance;
+        return this.balance;
     }
 
     public void addMoney(double amount){
@@ -28,7 +28,7 @@ public class BankAccount {
             OR the amount being sent is more than the account has
             return false (signaling the transaction failed)
         */
-        if(recipient == null || amount > this.balance) return false;
+        if(recipient == null || amount > this.balance || amount < 0) return false;
 
         //Add the money to the recipients account
         recipient.addMoney(amount);

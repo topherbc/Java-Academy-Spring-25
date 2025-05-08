@@ -62,5 +62,33 @@ class BankAccountTest{
         assertEquals(100, accountA.getBalance());
     }
 
+    @Test
+    public void get_balance_is_valid(){
+        //Arrange
+        BankAccount accountA = new BankAccount(150);
+        BankAccount accountB = new BankAccount(100);
 
+        //Act
+        double resultA = accountA.getBalance();
+        double resultB = accountB.getBalance();
+
+        //Assert
+        assertEquals(150, resultA);
+        assertEquals(100, resultB);
+    }
+
+    @Test
+    public void send_negative_amount_cancels(){
+        //Arrange
+        BankAccount accountA = new BankAccount(100);
+        BankAccount accountB = new BankAccount(100);
+
+        //Act
+        boolean result = accountA.sendMoney(accountB, -10);
+
+        //Assert
+        assertFalse(result);
+        assertEquals(100, accountA.getBalance());
+        assertEquals(100, accountB.getBalance());
+    }
 }
