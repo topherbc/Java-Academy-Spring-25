@@ -23,7 +23,7 @@ public class DuckStepsV3 {
             case 4: return normalizedCommand.equals("turn left");  // Now facing left (West)
             case 5: return normalizedCommand.equals("forward 1");
             case 6: return normalizedCommand.equals("turn right"); // Now facing down (South)
-            case 7: return normalizedCommand.equals("forward 2");
+            case 7: return normalizedCommand.equals("forward 3");
             case 8: return normalizedCommand.equals("turn left");  // Now facing right (East)
             case 9: return normalizedCommand.equals("forward 3");  // Reached goal (4,3)
             default: return false;
