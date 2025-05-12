@@ -41,3 +41,29 @@ Agenda Today
 12. We do exercise
 13. Recap and Q&A
   
+
+What did you learn today?
+
+1. Parent Classes or Super Class
+2. Children Classes
+3. Relationship, how objects are connected
+4. Inheritance
+   1. extends
+   2. super() - parent constructor
+   3. super. - parent class
+   4. use setters when no constructor, to set private properties
+   5. protected - access modifier
+      1. children and parent have access
+   6. private
+      1. only parent/object has access
+   7. @Override annotation
+   8. toString - used to better format output from print
+   9. Classes can't have multiple parents
+5.  Book Recs
+    1. Pragmatic Programmer
+    2. Clean Code
+    3. Grokking Algorithms
+       1. The C Programming Language
+
+
+
