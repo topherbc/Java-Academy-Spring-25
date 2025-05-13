@@ -135,6 +135,12 @@
     * https://www.aws.training/certification
     * https://pages.awscloud.com/cloudup-for-her-cloud-practitioner.html
     * https://learn.acloud.guru/course/aws--certified-cloud-practitioner/dashboard
+  * Azure
+    * https://learn.acloud.guru/learning-path/azure-devops
+    * https://learn.acloud.guru/course/ec7d5dfc-02b4-4808-a691-c28e5a197024/overview
+    * https://learn.acloud.guru/learning-path/azure-security
+    * https://learn.acloud.guru/learning-path/azure-development
+    * https://learn.acloud.guru/learning-path/azure-data
 
 
 ## Game design
