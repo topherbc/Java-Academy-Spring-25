@@ -11,7 +11,7 @@ public class Manager extends Employee {
     @Override
     public void work() {
         super.work();  // Call parent method
-        System.out.println(name + " is managing a team of " + teamSize + " people.");
+        System.out.println(this.name + " is managing a team of " + teamSize + " people.");
     }
 
     @Override

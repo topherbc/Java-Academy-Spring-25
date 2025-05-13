@@ -57,11 +57,17 @@ public class Main {
                     // Polymorphic behavior - treating all different types as Vehicle
                     System.out.println("All Vehicles in Our Fleet:");
                     System.out.println("========================");
-                    for (int i = 0; i < allVehicles.size(); i++) {
-                        System.out.println("Vehicle #" + (i + 1) + ":");
-                        System.out.println(allVehicles.get(i));
-                        System.out.println();
+
+                    for (Vehicle vehicle : allVehicles) {
+                        if (vehicle instanceof Car) {
+                            System.out.println("This is a car");
+                        } else if (vehicle instanceof Moped) {
+                            System.out.println("This is a MOPED");
+                        }
+                        System.out.println(vehicle);
+                        System.out.println("");
                     }
+
                     System.out.print("Please hit enter to return to the main menu ");
                     scanner.nextLine();
                     scanner.nextLine();

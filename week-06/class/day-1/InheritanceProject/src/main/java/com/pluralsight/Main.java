@@ -2,6 +2,9 @@ package com.pluralsight;
 
 import com.pluralsight.model.*;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("=== Inheritance and Super Demo ===\n");
@@ -10,7 +13,7 @@ public class Main {
         Employee employee = new Employee("John", 1001, 50000);
         Developer developer = new Developer("Alice", 1002, 75000, "Java");
         Manager manager = new Manager("Bob", 1003, 90000, 5);
-
+        
         // Show inheritance in action
         System.out.println("1. Basic Employee:");
         employee.displayInfo();
