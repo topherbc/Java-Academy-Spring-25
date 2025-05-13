@@ -225,3 +225,19 @@
   * labs.play-with-k8s.com
   * https://minikube.sigs.k8s.io/docs/
   * https://nginx.org/en/ (engine x)
+
+## Entrepreneurship and Product Development
+
+  * https://www.momtestbook.com/
+  * https://www.score.org/find-mentor
+  * https://www.leanfoundry.com/tools/lean-canvas
+  * https://www.figma.com/
+
+## Project Management
+
+  * https://www.coursera.org/professional-certificates/google-project-management/
+  * https://www.pmi.org/
+  * https://www.agilealliance.org/
+  * https://www.scrum.org/
+  * https://trello.com/
+  * https://en.wikipedia.org/wiki/Kaizen
