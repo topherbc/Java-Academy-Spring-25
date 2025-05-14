@@ -33,3 +33,15 @@ Agenda Today
 9. Break
 10. More repairs
 11. Recap and Q&A
+
+What did you learn today?
+
+1. Don't just Ctrl Z willy nilly
+2. instanceof assignment
+3. not
+4. HashMap
+   1. keys and values
+5. Accessing methods in another class
+6. Building context is difficult
+7. Build Configuration for all directories
+8. Juggling lots of packages
