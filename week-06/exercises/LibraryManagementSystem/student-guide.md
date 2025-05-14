@@ -43,7 +43,7 @@ The Library Management System is a Java console application that demonstrates Ob
 
 ### Architecture Overview
 ```
-com.library/
+com.pluralsight/
 ├── model/          # Data classes (Item, Book, Movie, Magazine, Member)
 ├── service/        # Business logic (Library, Logger)  
 ├── ui/             # User interface (LibrarySystem)
