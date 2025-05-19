@@ -17,4 +17,4 @@ Note: A remote control or a remote, is what we refer to the device that we can c
 
 ## Submission
 
-  1. Add a screenshot to the thread of today's Team's post
+  1. Add a screenshot of your diagram to the thread of today's Team's post
