@@ -45,3 +45,4 @@ What did you learn today?
 6. Building context is difficult
 7. Build Configuration for all directories
 8. Juggling lots of packages
+9. Fixing things can break things
