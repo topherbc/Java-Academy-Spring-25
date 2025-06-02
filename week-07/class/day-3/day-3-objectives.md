@@ -29,3 +29,31 @@ Agenda Today
 11. Break
 12. You do streams/we do streams
 13. Recap and Q&A
+
+
+
+What did you learn today?
+
+1. stream
+2. map()
+3. .mapToInt()
+4. .mapToDouble()
+5. .max()
+6. .min()
+7. .average() returns OptionalDouble
+8. .sum()
+9. forEach
+10. .filter
+11. .collectToList()
+12. Data transformation
+13. Processing data
+14. SSSDLC
+15. Streams are more effecient
+16. .orElse()
+17. .reducer()
+18. Lambda Expression == ->
+19. Method Reference ::
+    1.  EX. System.out::println
+20. .toList()
+21. Imperative v Declarative
+ 

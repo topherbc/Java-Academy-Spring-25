@@ -17,6 +17,10 @@ public class Employee {
         this.startTime = -1;
     }
 
+    public int getEmployeeId() {
+        return this.employeeId;
+    }
+
     public double getTotalPay() {
         return ((getRegularHours() * this.payRate) + (getOvertimeHours() * (this.payRate * 1.5)));
     }

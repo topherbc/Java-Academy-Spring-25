@@ -1,6 +1,7 @@
 package com.grocer;
 
 import java.util.ArrayList;
+import java.util.stream.Collectors;
 
 public class SearchUtilities {
     /**
@@ -11,15 +12,18 @@ public class SearchUtilities {
      * @return A new ArrayList containing only the products from the specified category
      */
     public static ArrayList<DairyProduct> getByProductCategory(String category, ArrayList<DairyProduct> products) {
-        ArrayList<DairyProduct> matches = new ArrayList<>();
-
-        for (DairyProduct dairyProduct : products) {
-            if (category.equals(dairyProduct.getCategory())) {
-                matches.add(dairyProduct);
-            }
-        }
-
-        return matches;
+        return (ArrayList<DairyProduct>) products.stream()
+                .filter(p -> p.getCategory().equals(category))
+                .collect(Collectors.toList());
+//        ArrayList<DairyProduct> matches = new ArrayList<>();
+//
+//        for (DairyProduct dairyProduct : products) {
+//            if (category.equals(dairyProduct.getCategory())) {
+//                matches.add(dairyProduct);
+//            }
+//        }
+//
+//        return matches;
     }
 
     /**
@@ -57,13 +61,17 @@ public class SearchUtilities {
      * @return The total monetary value of all products in the inventory
      */
     public static double getTotalProductValue(ArrayList<DairyProduct> products) {
-        double sum = 0;
+        int t = (int) products.stream().mapToInt(DairyProduct::getStockQuantity).average().getAsDouble();
 
-        for (int i = 0; i < products.size(); i++) {
-            sum += products.get(i).getPrice() * products.get(i).getStockQuantity();
-        }
 
-        return sum;
+        return products.stream().mapToDouble(p -> p.getPrice() * p.getStockQuantity()).sum();
+//        double sum = 0;
+//
+//        for (int i = 0; i < products.size(); i++) {
+//            sum += products.get(i).getPrice() * products.get(i).getStockQuantity();
+//        }
+//
+//        return sum;
     }
 
     /**
@@ -73,7 +81,8 @@ public class SearchUtilities {
      * @return The total count of products in the list
      */
     public static int getTotalProductCount(ArrayList<?> products) {
-        return products.size();
+        return (int) products.stream().count();
+//        return products.size();
     }
 
     /**
@@ -84,14 +93,15 @@ public class SearchUtilities {
      * @return The count of organic products in the list
      */
     public static int getTotalOrganicProductCount(ArrayList<DairyProduct> products) {
-        int count = 0;
+        return (int) products.stream().filter(DairyProduct::isOrganic).count();
+//        int count = 0;
 
-        for (DairyProduct dairyProduct : products) {
-            if (dairyProduct.isOrganic()) {
-                count++;
-            }
-        }
-
-        return count;
+//        for (DairyProduct dairyProduct : products) {
+//            if (dairyProduct.isOrganic()) {
+//                count++;
+//            }
+//        }
+//
+//        return count;
     }
 }

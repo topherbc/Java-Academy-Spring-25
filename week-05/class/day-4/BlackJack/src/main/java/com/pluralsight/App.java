@@ -46,7 +46,7 @@ public class App {
         System.out.print("Please enter all names of players (comma seperated): ");
         String[] names = input.nextLine().trim().split(Pattern.quote(","));
 
-        //names: M, T, C, Z, X
+        //names: "M,T,C,Z,X"
         for (String name : names) {
             //name: M
             players.add(new Player(name.trim()));
@@ -93,7 +93,7 @@ public class App {
             //4 players
 
             //player 1 score: 23
-            //player 2 score: 21
+            //player 2 score: 19
             //player 3 score: 21
             //player 4 score: 20
 
