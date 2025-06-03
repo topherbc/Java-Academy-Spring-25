@@ -81,7 +81,7 @@ ORDER BY UnitPrice DESC, ProductName ASC;
 -- 9. Write a query that lists all of the columns and all of the rows of the
 -- categories table? What is the category id of seafood?
 
-
+SELECT * FROM Categories; -- 8
 
 -- 10. Examine the Products table. How does it identify the type (category) of
 -- each item sold? Write a query to list all of the seafood items we carry.
@@ -93,6 +93,15 @@ ORDER BY UnitPrice DESC, ProductName ASC;
 
 
 -- 12. What employees have "manager" in their titles?
+
+
+SELECT 
+	FirstName, 
+    LastName, 
+    Title 
+FROM Employees 
+WHERE Title LIKE '%Manager%';
+
 
 
 
@@ -111,5 +120,12 @@ ORDER BY UnitPrice DESC, ProductName ASC;
 -- 16. Examine the Products table. How do you know what supplier supplies
 -- each product? Write a query to list all of the items that "Tokyo Traders"
 -- supplies to Northwind
+
+-- 4 == "Tokyo Traders"
+
+SELECT * FROM Products 
+WHERE SupplierID = (SELECT SupplierID 
+					FROM Suppliers 
+                    WHERE CompanyName = "Tokyo Traders");
 
 
