@@ -1,7 +1,0 @@
-# Add this to hide gist URLs from students in future classes
-# Uncomment the line below to hide the gist URLs file
-# gist-urls.md
-
-# Or hide entire directories if needed
-# hubs/
-# satellites/
