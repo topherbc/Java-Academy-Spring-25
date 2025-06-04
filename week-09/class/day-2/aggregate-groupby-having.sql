@@ -75,7 +75,6 @@ FROM
 GROUP BY Title
 HAVING AVG(Salary) < 2000;
 
-
 SELECT
 	City,
     SUM(Salary) AS Total_Salary
@@ -83,4 +82,16 @@ FROM
 	Employees
 GROUP BY City
 HAVING Total_Salary > 5000;
+
+
+
+
+
+
+
+
+
+
+
+
 

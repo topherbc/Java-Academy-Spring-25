@@ -308,3 +308,22 @@ Agenda Today
 10. Break
 11. A quick trip to the zoo
 12. Recap and Q&A
+
+What did you learn today?
+
+1. CONCAT()
+2. CEIL() - rounds up
+3. ROUND(x, z) - rounds normal (x is value to round, z is decimal places)
+4. FLOOR() - rounds down
+5. FORMAT() - formats data, truncate decimal, turns to varchar
+6. WHERE compare with alias doesn't work
+7. GROUP BY
+8. HAVING - aliases and aggregate condition
+9. AS - alias column
+10. CASE WHEN THEN ELSE END
+11. Aggregate Functions
+    1. SUM()
+    2. MAX()
+    3. MIN()
+    4. AVG()
+    5. COUNT()
