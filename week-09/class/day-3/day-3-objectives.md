@@ -44,3 +44,20 @@ Agenda Today
 8. Break
 9. JOINs
 10. Recap and Q&A
+
+What did you learn today?
+
+1. JOIN
+   1. INNER JOIN - interdependent, must have connection on both tables
+   2. LEFT JOIN - allows null on left tables
+   3. RIGHT JOIN - allows null on right tables
+2. IN - sees if field has data from list/range
+3. AS - alias, alternate name for table for reference
+4. ON - how we join, common values to connect 
+   1. ex. ON (O.Order_ID = P.OrderID)
+5. Subqueries or Nested Queries
+   1. Queries within Queries
+6. SQL syntax is english and logic
+7. Venn Diagram
+8. Primary Key - Unique Identifier for row of data
+9. Foreign Key - Primary Key on another table
