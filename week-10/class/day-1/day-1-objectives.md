@@ -41,3 +41,21 @@ Agenda Today
 12. PreparedStatements Demo
 13. Exercise
 14. Recap and Q&A
+
+What did you learn today?
+
+1. pom.xml config
+   1. <dependencies> <dependency> </dependency> </dependencies>
+2. How to connect SQL and Java
+   1. JDBC - Java Database Connectivity
+3. How to effectively use LLM
+4. PrepareStatements
+   1. Filler for searching in query
+   2. Protects attacks
+5. SQL Injection
+6. 127.0.0.1 - localhost
+7. IP - Internet Protocol
+8. :3306 port - MySQL port, runs on TCP
+9. Protocol - jdbc:mysql://
+10. How to research and find libraries
+11. External Libraries
