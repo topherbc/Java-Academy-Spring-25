@@ -44,7 +44,7 @@ Agenda Today
 
 What did you learn today?
 
-1. pom.xml config
+1. Project Object Model (pom) pom.xml config
    1. <dependencies> <dependency> </dependency> </dependencies>
 2. How to connect SQL and Java
    1. JDBC - Java Database Connectivity
@@ -59,3 +59,4 @@ What did you learn today?
 9. Protocol - jdbc:mysql://
 10. How to research and find libraries
 11. External Libraries
+12. 
