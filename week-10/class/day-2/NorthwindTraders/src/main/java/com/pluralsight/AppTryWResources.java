@@ -1,0 +1,35 @@
+package com.pluralsight;
+
+import java.sql.*;
+
+public class AppTryWResources {
+    public static void main(String[] args) {
+
+        String url = "jdbc:mysql://127.0.0.1:3306/northwind";
+        String user = args[0];
+        String password = args[1];
+
+        String query = "SELECT * FROM Products";
+
+        try (Connection connection = DriverManager.getConnection(url, user, password);
+        PreparedStatement statement = connection.prepareStatement(query);) {
+            // Executing query
+            try(ResultSet results = statement.executeQuery()) {
+                System.out.printf("%-10s %-35s %-12s %-15s%n", "ProductId", "ProductName", "UnitPrice", "UnitsInStock");
+                System.out.println("------------------------------------------------------------------------");
+
+                // Processing the result set
+                while (results.next()) {
+                    int productId = results.getInt("ProductID");
+                    String productName = results.getString("ProductName");
+                    double unitPrice = results.getDouble("UnitPrice");
+                    int unitsInStock = results.getInt("UnitsInStock");
+                    System.out.printf("%-10s %-35s %-12s %-15s%n", productId, productName, unitPrice, unitsInStock);
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+    }
+}
