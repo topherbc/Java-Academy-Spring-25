@@ -9,8 +9,8 @@ public class App {
 
         // Get database connection parameters from environment variables
         String url = System.getenv("DB_URL");
-        String user = args[0];
-        String password = args[1];
+        String user = System.getenv("DB_USER");
+        String password = System.getenv("DB_PASS");
 
         // Provide default values if environment variables are not set
         if (url == null) {
@@ -26,13 +26,13 @@ public class App {
 
         try {
 
-            dataManager.getAllProducts();
+//            dataManager.getAllProducts();
 
 
             ProductDAO productDAO = new ProductDAO(dataManager);
 
 
-//            demonstrateAdvancedDAO(productDAO);
+            demonstrateAdvancedDAO(productDAO);
 
         } finally {
             // Clean up resources

@@ -25,7 +25,7 @@ Books that you would recommend?
 23. Think and grow rich by Napoleon Hill
 24. "The Inner Life of Cats" — Thomas McNamee
 25. surya putrakaran
-26. Modern Eden By Jack London
+26. Martin Eden By Jack London
 27. Vinland Saga by Makoto Yukimura
 28. Rich Dad, Poor Dad by Robert Kiyosaki
 29. The 7 Habits of Highly Effective People" by Stephen R. Covey
@@ -35,11 +35,32 @@ Books that you would recommend?
 33. The body keeps the score by Bessel van der Kolk
 34. Permission to Feel by marc brackett
 35. How to win friends and influence people by Dale Carnegie
-36. "Walls in our head" Стіни в моїй голові by Володимир Станчишин
+36. "Walls in my head by Volodymyr Stanchyshyn" Стіни в моїй голові by Володимир Станчишин
 37. The Green Mile by Stephen King
-38. The Art Of Fighting by Bradley Allen Fiske
-39. Classroom of the Elite by Shōgo Kinugasa
-40. Bridge of Terabitha
-41. Breakfast of Champions by Kurt Vonnegut
-42. The phoenix project by George Spafford, Gene Kim, Kevin Behr
+38. If We Can Put a Man on the Moon by William D. Eggers  John O'Leary 
+39. The Art Of Fighting by Bradley Allen Fiske
+40. Classroom of the Elite by Shōgo Kinugasa
+41. Bridge of Terabitha
+42. Breakfast of Champions by Kurt Vonnegut
+43. The phoenix project by George Spafford, Gene Kim, Kevin Behr
+44. Nonviolent Communication by Marshall B. Rosenberg
 
+Today's Objectives
+
+1. DataManagers
+2. DataAccessObject DAO's
+3. All CRUD operations in JDBC
+4. Setting and retrieving env variables
+
+Agenda Today
+
+1. Icebreaker
+2. YU Break
+3. Intro
+4. Demo DataMangers and DAO's
+5. Group Exercise
+6. Lunch
+7. Exercises
+8. Break
+9. Exercises
+10. Recap and Q&A
