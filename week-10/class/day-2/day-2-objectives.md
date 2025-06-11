@@ -43,3 +43,16 @@ Agenda Today
 11. Break
 12. Exercise
 13. Recap and Q&A
+
+What did you learn today?
+
+1. Auto closing resources using try-with-resources
+2. ResultSet != Resultset
+3. Passing args to java program
+4. try-catch-finally
+5. BasicDataSource instead of DriverManager
+6. DataSource is to manage data connection
+7. ~~~~~~How to use env vars
+8. New dependencies
+9. Can have any number of dependencies
+10. CLI arguments to pass credentials
