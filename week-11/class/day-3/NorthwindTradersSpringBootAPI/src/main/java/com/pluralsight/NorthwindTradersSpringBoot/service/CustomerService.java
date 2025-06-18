@@ -27,7 +27,7 @@ public class CustomerService {
         return customerDao.getAll();
     }
 
-    public Customer getByCustomerID(int id) {
+    public Customer getByCustomerID(String id) {
         return customerDao.getByCustomerID(id);
     }
 

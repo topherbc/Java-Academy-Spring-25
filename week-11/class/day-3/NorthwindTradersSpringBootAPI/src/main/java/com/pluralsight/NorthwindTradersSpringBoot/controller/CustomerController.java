@@ -33,13 +33,19 @@ public class CustomerController {
         return customerService.getAllCustomers();
     }
 
+    @RequestMapping(path="/customers/{id}", method = RequestMethod.GET)
+    @ResponseStatus(value = HttpStatus.OK)
+    public Customer getCustomerByID(@PathVariable String id) {
+        return customerService.getByCustomerID(id);
+    }
+
     @RequestMapping(path="/customers", method = RequestMethod.POST)
     public Customer createCustomer(@RequestBody Customer customer) {
         return customer;
     }
 
     @RequestMapping(path="/customers/{id}", method=RequestMethod.PUT)
-    public String updateCustomer(@PathVariable int id) {
+    public String updateCustomer(@PathVariable String id) {
         return "This is the id: " + id;
     }
 

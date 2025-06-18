@@ -55,12 +55,12 @@ public class CustomerDAOJDBCImpl implements CustomerDAO {
     }
 
     @Override
-    public Customer getByCustomerID(int id) {
+    public Customer getByCustomerID(String id) {
         Customer customer = null;
         String sql = "SELECT CustomerID, CompanyName, ContactName, ContactTitle FROM Customers WHERE customerId = ?;";
         try(Connection connection = dataSource.getConnection()){
             PreparedStatement statement = connection.prepareStatement(sql);
-            statement.setInt(1, id);
+            statement.setString(1, id);
             ResultSet rows = statement.executeQuery();
             while(rows.next()){
                 customer = new Customer(rows.getString(1), rows.getString(2), rows.getString(3),rows.getString(4));
@@ -93,7 +93,7 @@ public class CustomerDAOJDBCImpl implements CustomerDAO {
             // Retrieve the generated key
             ResultSet generatedKeys = statement.getGeneratedKeys();
             if(generatedKeys.next()) {
-                createdCustomer = getByCustomerID(generatedKeys.getInt(1));
+                createdCustomer = getByCustomerID(generatedKeys.getString(1));
             }
         }
         catch (SQLException e) {
