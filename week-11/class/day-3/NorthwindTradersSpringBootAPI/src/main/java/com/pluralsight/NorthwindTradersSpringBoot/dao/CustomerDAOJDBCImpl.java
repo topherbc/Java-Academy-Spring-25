@@ -73,11 +73,6 @@ public class CustomerDAOJDBCImpl implements CustomerDAO {
     }
 
     @Override
-    public void delete() {
-
-    }
-
-    @Override
     public void delete(int id, Customer customer) {
 
     }
