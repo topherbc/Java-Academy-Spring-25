@@ -27,4 +27,16 @@ public class CustomerService {
         return customerDao.getAll();
     }
 
+    public Customer getByCustomerID(int id) {
+        return customerDao.getByCustomerID(id);
+    }
+
+    public void update(int id, Customer customer) {
+        customerDao.update(id, customer);
+    }
+
+    public void delete(int id, Customer customer) {
+        customerDao.delete(id, customer);
+    }
+
 }
