@@ -19,8 +19,8 @@ public class CustomerService {
         this.customerDao = customerDao;
     }
 
-    public void addCustomer(Customer customer) {
-        customerDao.add(customer);
+    public boolean addCustomer(Customer customer) {
+        return customerDao.add(customer);
     }
 
     public List<Customer> getAllCustomers() {
@@ -31,8 +31,8 @@ public class CustomerService {
         return customerDao.getByCustomerID(id);
     }
 
-    public void update(int id, Customer customer) {
-        customerDao.update(id, customer);
+    public boolean update(String id, Customer customer) {
+        return customerDao.update(id, customer);
     }
 
     public void delete(int id, Customer customer) {

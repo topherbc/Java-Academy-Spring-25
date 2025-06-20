@@ -40,13 +40,15 @@ public class CustomerController {
     }
 
     @RequestMapping(path="/customers", method = RequestMethod.POST)
-    public Customer createCustomer(@RequestBody Customer customer) {
-        return customer;
+    @ResponseStatus(value = HttpStatus.OK)
+    public boolean addCustomer(@RequestBody Customer customer) {
+        return customerService.addCustomer(customer);
     }
 
-    @RequestMapping(path="/customers/{id}", method=RequestMethod.PUT)
-    public String updateCustomer(@PathVariable String id) {
-        return "This is the id: " + id;
+    @RequestMapping(path="/customers", method = RequestMethod.PUT)
+    @ResponseStatus(value = HttpStatus.OK)
+    public boolean updateCustomer(@RequestBody Customer customer) {
+        return customerService.update(customer.getCustomerId(), customer);
     }
 
 

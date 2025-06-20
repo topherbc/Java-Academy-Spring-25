@@ -74,3 +74,19 @@ Agenda Today
 8. Break
 9. We do POST PUT DELETE
 10. Recap and Q&A
+
+What did you learn today?
+
+1. Technical Debt != BAD
+2. POST - Create
+3. PUT - Update
+4. DELETE - Delete
+5. GET - Read
+6. @RequestBody 
+7. MVC Pattern
+   1. Model
+   2. View
+   3. Controller
+8. JSON - javascript object notation
+   1. How we send data
+9. 

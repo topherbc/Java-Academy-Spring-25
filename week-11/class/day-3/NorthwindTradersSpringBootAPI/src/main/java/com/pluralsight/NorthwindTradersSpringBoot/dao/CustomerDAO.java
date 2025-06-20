@@ -10,7 +10,7 @@ public interface CustomerDAO {
     public List<Customer> getByContactName();
     public List<Customer> getByAddress();
     public Customer getByCustomerID(String id);
-    public void add(Customer customer);
-    public boolean update(int id, Customer customer);
+    public boolean add(Customer customer);
+    public boolean update(String id, Customer customer);
     public void delete(int id, Customer customer);
 }

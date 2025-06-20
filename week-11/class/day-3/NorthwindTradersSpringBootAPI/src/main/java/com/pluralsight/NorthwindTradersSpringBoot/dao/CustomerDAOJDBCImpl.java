@@ -57,7 +57,7 @@ public class CustomerDAOJDBCImpl implements CustomerDAO {
     @Override
     public Customer getByCustomerID(String id) {
         Customer customer = null;
-        String sql = "SELECT CustomerID, CompanyName, ContactName, ContactTitle FROM Customers WHERE customerId = ?;";
+        String sql = "SELECT CustomerID, CompanyName, ContactName, ContactTitle FROM Customers WHERE CustomerId = ?;";
         try(Connection connection = dataSource.getConnection()){
             PreparedStatement statement = connection.prepareStatement(sql);
             statement.setString(1, id);
@@ -78,45 +78,38 @@ public class CustomerDAOJDBCImpl implements CustomerDAO {
     }
 
     @Override
-    public void add(Customer customer) {
+    public boolean add(Customer customer) {
         Customer createdCustomer = null;
-        String sql = "INSERT INTO Customers (CompanyName, ContactName, ContactTitle) VALUES (?, ?, ?)";
+        String sql = "INSERT INTO Customers (CustomerID, CompanyName, ContactName, ContactTitle) VALUES (?, ?, ?, ?)";
         try(Connection connection = dataSource.getConnection()){
             PreparedStatement statement = connection.prepareStatement(sql, PreparedStatement.RETURN_GENERATED_KEYS);
 
-            statement.setString(1, customer.getCompanyName());
-            statement.setString(2, customer.getContactName());
-            statement.setString(3, customer.getContactTitle());
+            statement.setString(1, customer.getCustomerId());
+            statement.setString(2, customer.getCompanyName());
+            statement.setString(3, customer.getContactName());
+            statement.setString(4, customer.getContactTitle());
 
-            statement.executeUpdate();
-
-            // Retrieve the generated key
-            ResultSet generatedKeys = statement.getGeneratedKeys();
-            if(generatedKeys.next()) {
-                createdCustomer = getByCustomerID(generatedKeys.getString(1));
+            if (statement.executeUpdate() != 0){
+                return true;
+            } else {
+                return false;
             }
         }
         catch (SQLException e) {
             e.printStackTrace();
         }
+        return false;
     }
 
     @Override
-    public boolean update(int id, Customer customer) {
-        int contactNamePos = 0;
-        int companyNamePos = 0;
-        int contactTitlePos = 0;
+    public boolean update(String id, Customer customer) {
         int idPos = 0;
         String updateParamStatement = "";
         if(customer.getContactName() != null) {
-            contactNamePos+=1;
-            idPos++;
             updateParamStatement+=" ContactName=? ";
         }
 
         if(customer.getCompanyName() != null) {
-            companyNamePos+=companyNamePos+1;
-            idPos++;
             String comma = "";
             if (updateParamStatement.length() > 0) {
                 comma=",";
@@ -125,8 +118,6 @@ public class CustomerDAOJDBCImpl implements CustomerDAO {
         }
 
         if(customer.getContactTitle() != null) {
-            contactTitlePos+=companyNamePos+contactNamePos+1;
-            idPos++;
             String comma = "";
             if (updateParamStatement.length() > 0) {
                 comma=",";
@@ -142,18 +133,24 @@ public class CustomerDAOJDBCImpl implements CustomerDAO {
             System.out.println(customer);
 
             if(customer.getContactName() != null) {
-                statement.setString(contactNamePos, customer.getContactName());
+                idPos+=1;
+                statement.setString(idPos, customer.getContactName());
             }
 
             if(customer.getCompanyName() != null) {
-                statement.setString(companyNamePos, customer.getCompanyName());
+                idPos+=1;
+                statement.setString(idPos, customer.getCompanyName());
             }
 
             if(customer.getContactTitle() != null) {
-                statement.setString(contactNamePos, customer.getContactTitle());
+                idPos+=1;
+                statement.setString(idPos, customer.getContactTitle());
             }
 
-            statement.setInt(idPos+1, id);
+            idPos+=1;
+            statement.setString(idPos, id);
+
+            System.out.println(statement);
 
             statement.executeUpdate();
         }
